@@ -1,11 +1,11 @@
 svg .jqvmap-region{
-    fill:#00394f;
+    fill:#c9dbe2;
     stroke:#eee;
     stroke-width: .25;
 }
 
 svg .jqvmap-region:hover{
-    fill: #006284;
+    fill: #22ff00;
     transition: 0.6s;
     cursor: pointer;
 }

@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Footer from './Footer';
+import NavBar from './NavBar';
 
 export default function Cart() {
     const [cartItem, setcartItem] = useState([]);
@@ -26,6 +28,8 @@ export default function Cart() {
         })
     }
   return (
+   <>
+   <NavBar/>
     <div>
         <ul>
             {
@@ -49,5 +53,7 @@ export default function Cart() {
             }
         </ul>
     </div>
+    <Footer/>
+   </>
   )
 }

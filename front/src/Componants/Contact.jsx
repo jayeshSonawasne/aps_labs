@@ -2,9 +2,13 @@ import React from "react";
 import { FiSend, FiMail, FiPhoneCall } from "react-icons/fi";
 import GoogleMapReact from "google-map-react";
 import './Contact.css'
+import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 export default function Contact() {
   return (
+    <>
+    <NavBar/>
     <div className="container-fluid">
       <div className="row justify-content-around py-5">
         <div className="col-md-2">
@@ -153,6 +157,7 @@ export default function Contact() {
                   original="#e4e4e4"
                   id="jqvmap1_id"
                   class="jqvmap-region"
+                  // style={{fill:"#22ff00"}}
                 ></path>
                 <path
                   d="M852.76,348.29l-0.37,24.44l3.52-0.19l4.63-5.41l3.89,0.19l2.5,2.24l0.83,6.9l7.96,4.2l2.04-0.75v-2.52l-6.39-5.32l-3.15-7.28l2.5-1.21l-1.85-4.01l-3.7-0.09l-0.93-4.29l-9.81-6.62L852.76,348.29L852.76,348.29M880.48,349l-0.88,1.25l4.81,4.26l0.66,2.5l1.31-0.15l0.15-2.57l-1.46-1.32L880.48,349L880.48,349M882.89,355.03l-0.95,0.22l-0.58,2.57l-1.82,1.18l-5.47,0.96l0.22,2.06l5.76-0.29l3.65-2.28l-0.22-3.97L882.89,355.03L882.89,355.03M889.38,359.51l1.24,3.45l2.19,2.13l0.66-0.59l-0.22-2.28l-2.48-3.01L889.38,359.51L889.38,359.51z"
@@ -2356,5 +2361,7 @@ export default function Contact() {
         />
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

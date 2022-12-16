@@ -4,10 +4,13 @@ import ControlledCarousel from './Carousel'
 import OwlCarousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+import NavBar from './NavBar'
+import Footer from './Footer'
 
 export default function Home() {
   return (
     <>
+    <NavBar/>
     <ControlledCarousel/>
     <div className='container-fluid'>
         <div className="row text-center mt-4">
@@ -110,9 +113,9 @@ export default function Home() {
     </div>
 
    </OwlCarousel>
+   <Footer/>
           </div>
         </div>
-      
         
     </>
   )

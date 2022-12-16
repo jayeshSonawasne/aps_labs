@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect, useState } from 'react';
 import {RiDownloadCloudFill} from 'react-icons/ri'
+import Footer from './Footer';
+import NavBar from './NavBar';
 
 export default function Product() {
     const [productId, setproductId] = useState();
@@ -17,6 +19,8 @@ export default function Product() {
         })
     }
   return (
+    <>
+    <NavBar/>
     <div className='container-fluid'>
     <div className="row justify-content-around py-5">
         <div className="col-md-2">
@@ -78,5 +82,7 @@ export default function Product() {
         }
     </div>
     </div>
+    <Footer/>
+    </>
   )
 }

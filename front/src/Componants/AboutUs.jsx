@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 import {BsFillCheckCircleFill} from 'react-icons/bs'
 import { Link, Outlet } from 'react-router-dom'
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 export default function AboutUs() {
     const [Counter, setCounter] = useState(0);
@@ -52,6 +54,8 @@ export default function AboutUs() {
 
 
   return (
+    <>
+    <NavBar/>
     <div className='container-fluid'>
         <div className="row justify-content-around py-5">
             <div className="col-md-2">
@@ -163,5 +167,7 @@ export default function AboutUs() {
         </div>
         
     </div>
+    <Footer/>
+    </>
   )
 }
